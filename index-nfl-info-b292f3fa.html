@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主题内容概述 — 关于 nfl 的介绍页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #faf8f5;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #2e2b28;
+            line-height: 1.7;
+            padding: 2rem 1.2rem;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 252, 247, 0.8);
+            padding: 2.5rem 2rem;
+            border-radius: 28px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.03);
+        }
+
+        h1, h2, h3 {
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 3.5rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px dashed #dcd6ce;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            color: #3f3b36;
+            margin-bottom: 0.5rem;
+            font-weight: 350;
+        }
+
+        .hero .sub {
+            font-size: 1.1rem;
+            color: #6a625a;
+            max-width: 600px;
+            margin: 0.5rem auto 1.2rem;
+        }
+
+        .hero .tagline {
+            display: inline-block;
+            background: #e9e2d9;
+            padding: 0.4rem 1.6rem;
+            border-radius: 30px;
+            font-size: 0.95rem;
+            color: #423d36;
+        }
+
+        .section {
+            margin: 2.8rem 0;
+        }
+
+        .section h2 {
+            font-size: 1.7rem;
+            margin-bottom: 1rem;
+            padding-left: 0.5rem;
+            border-left: 4px solid #b7a89b;
+            color: #3b3630;
+        }
+
+        .section p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        .card-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.8rem;
+            margin: 1.8rem 0 0.5rem;
+        }
+
+        .card {
+            background: #ffffffed;
+            flex: 1 1 220px;
+            padding: 1.5rem 1.2rem;
+            border-radius: 24px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.02);
+            border: 1px solid #ede7df;
+        }
+
+        .card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.7rem;
+            color: #4a443e;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #555049;
+        }
+
+        .quote-block {
+            background: #f3eee7;
+            padding: 1.6rem 2rem;
+            border-radius: 28px;
+            margin: 2.2rem 0;
+            border-left: 6px solid #a39282;
+            font-style: normal;
+        }
+
+        .quote-block p {
+            margin-bottom: 0.5rem;
+        }
+
+        .faq-summary {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem 2rem;
+            background: #f6f1ea;
+            padding: 1.8rem 2rem;
+            border-radius: 28px;
+            margin: 2rem 0;
+        }
+
+        .faq-item {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #e1d9cf;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-item strong {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 0.2rem;
+            color: #403a33;
+        }
+
+        .faq-item span {
+            font-size: 0.95rem;
+            color: #58514a;
+        }
+
+        .footer-links {
+            margin-top: 3.5rem;
+            padding-top: 1.8rem;
+            border-top: 1px solid #ddd7ce;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.95rem;
+        }
+
+        .footer-links a {
+            color: #5b5148;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-color: #c6bab0;
+        }
+
+        .footer-links a:hover {
+            color: #2f2923;
+            text-decoration-color: #2f2923;
+        }
+
+        .footer-note {
+            color: #7e756c;
+            font-size: 0.9rem;
+            padding: 0.5rem 0;
+        }
+
+        @media (max-width: 640px) {
+            body { padding: 1rem; }
+            .page { padding: 1.5rem 1.2rem; }
+            .hero h1 { font-size: 2rem; }
+            .faq-summary { grid-template-columns: 1fr; }
+            .footer-links { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <!-- hero 区 -->
+    <div class="hero">
+        <h1>主题内容 · 背后的信息</h1>
+        <div class="sub">从赛事、数据到文化脉络，一次结构清晰的梳理。</div>
+        <div class="tagline">围绕 <strong>nfl</strong> 展开的内容框架</div>
+    </div>
+
+    <!-- 优势区 / 特点区 -->
+    <div class="section">
+        <h2>内容结构的几个特点</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h3>分层叙述</h3>
+                <p>不堆砌术语，按背景、现状与常见疑问组织段落，适合快速理解核心。</p>
+            </div>
+            <div class="card">
+                <h3>场景覆盖</h3>
+                <p>从讨论热度高的竞技层面，到规则演变、球队文化均有涉及。</p>
+            </div>
+            <div class="card">
+                <h3>便于延伸</h3>
+                <p>每个板块末尾留出自然衔接点，可进一步阅读 <a href="https://index-nfl.com" style="text-decoration: underline; text-underline-offset: 3px; color: #3f3b36;">nfl</a> 相关内容。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 说明区 / 详细展开 -->
+    <div class="section">
+        <h2>关于主题的一种说明方式</h2>
+        <p>在整理与 <strong>nfl</strong> 相关的信息时，常遇到两个难点：一是信息源庞杂，二是讨论往往集中在少数热点上。下面尝试用更平实的框架来容纳多个侧面。</p>
+        <p>首先是竞技层面：每场比赛由四节组成，进攻、防守、特勤组分工明确。规则经过多次修订，近年对球员安全的重视带来了不少变化。此外，选秀、工资帽、自由球员市场等制度共同塑造了联赛的竞争平衡。</p>
+        <p>其次是文化层面：球队与城市之间的纽带、球迷传统、媒体叙事以及超级碗带来的商业影响，都已经成为流行文化的一部分。不同时代的标志性教练和球员也构成了独特的叙事线索。</p>
+
+        <div class="quote-block">
+            <p>一个值得留意的视角：许多新观众会先被比赛节奏吸引，然后逐渐对战术设计和球队历史产生兴趣。这种渐进式的了解路径，恰好说明主题内容具有多层次的吸引力。</p>
+        </div>
+    </div>
+
+    <!-- FAQ 摘要 -->
+    <div class="section">
+        <h2>常见疑问 · 摘要</h2>
+        <div class="faq-summary">
+            <div class="faq-item">
+                <strong>赛季结构是怎样的？</strong>
+                <span>常规赛通常从9月持续到次年1月，每支球队进行17场比赛，随后进入单场淘汰制的季后赛。</span>
+            </div>
+            <div class="faq-item">
+                <strong>为什么球队名称有 NFC 和 AFC 之分？</strong>
+                <span>这是联盟内两个联合会的划分，历史渊源可追溯到1970年的合并。两联合会各自决出冠军，最后在超级碗相遇。</span>
+            </div>
+            <div class="faq-item">
+                <strong>选秀顺序如何决定？</strong>
+                <span>主要依据上赛季战绩，战绩越差的球队获得越靠前的选秀权，目的是保持竞争平衡。部分顺位可通过交易变动。</span>
+            </div>
+            <div class="faq-item">
+                <strong>从哪里获取可靠的赛程和数据？</strong>
+                <span>官方渠道以及像 <a href="https://index-nfl.com" style="text-decoration: underline; text-underline-offset: 3px; color: #3f3b36;">nfl</a> 这样的聚合类页面都提供结构化信息，方便对比和查阅。</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部链接 -->
+    <div class="footer-links">
+        <div>
+            <span>进一步阅读：</span>
+            <a href="https://index-nfl.com">nfl</a>
+        </div>
+        <div class="footer-note">
+            © 信息页 · 内容基于公开材料整理
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
